@@ -24,6 +24,7 @@ import PlaygroundSupport
  Or, if you wish, you may use the color constants created below.
  */
 
+
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
@@ -35,25 +36,24 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 
-// No border, has a fill
-canvas.fillColor = Color.blue
-let fillColor = Color(hue: 205, saturation: 74, brightness: 77, alpha: 75)
-canvas.drawShapesWithBorders = false
-canvas.drawShapesWithFill = true
-canvas.drawEllipse(at: Point(x: 350, y: 200), width: 300, height: 325)
+// Background
+canvas.fillColor = grey
 
-
-// Has a border, no fill
-canvas.fillColor = Color.red
+//// Has a border, no fill
+canvas.defaultBorderWidth = 100
 canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 300, height: 325)
+canvas.borderColor = lightRed
+canvas.drawShapesWithFill = true
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 300, height: 300)
+
+// No border, has a fill
+canvas.defaultBorderWidth = 100
+canvas.drawShapesWithBorders = true
+canvas.borderColor = lightBlue
+canvas.drawShapesWithFill = true
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 300, height: 300)
 
 
 
-/*:
- ## Template code
- The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
- */
 PlaygroundPage.current.liveView = canvas
 
