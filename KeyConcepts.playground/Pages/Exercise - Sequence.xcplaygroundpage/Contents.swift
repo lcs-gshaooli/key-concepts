@@ -53,7 +53,20 @@ canvas.borderColor = lightBlue
 canvas.drawShapesWithFill = true
 canvas.drawEllipse(at: Point(x: 350, y: 200), width: 300, height: 300)
 
+canvas.drawText(message: "the jesus", at: Point(x:10,y:450), size: 40, kerning: 0.75)
+canvas.drawText(message: "and mary chain", at: Point(x:10,y:405), size: 40, kerning: 0.75)
 
+ canvas.drawText(message: "friday", at: Point(x:12, y:570), size: 10)
+canvas.drawText(message: "december 4 1987", at: Point(x:15, y:555), size: 10)
+canvas.drawText(message: "8 pm show", at: Point(x:15, y:540), size: 10)
+
+ canvas.drawText(message: "with", at: Point(x:115, y:570), size: 10)
+canvas.drawText(message: "social distortion", at: Point(x:115, y:555), size: 10)
+canvas.drawText(message: "and opal", at: Point(x:115, y:540), size: 10)
+
+ canvas.drawText(message: "hollywood palladium", at: Point(x:275, y:570), size: 10)
+canvas.drawText(message: "6215 sunset blvd.", at: Point(x:275, y:555), size: 10)
+canvas.drawText(message: "los angeles, california", at: Point(x:275, y:540), size: 10)
 
 PlaygroundPage.current.liveView = canvas
 
