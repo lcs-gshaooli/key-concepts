@@ -37,6 +37,24 @@ let neonGreen = Color(hue: 107, saturation: 61, brightness: 93, alpha: 100)
 
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
+// Color Text
+let white = Color( hue:12, saturation: 10, brightness: 100, alpha: 100)
+
+// TEXT
+canvas.drawText(message: "sloan", at: Point(x:150,y:425), size: 85, kerning: 0.75)
+
+ canvas.drawText(message: "saturday", at: Point(x:15, y:570), size: 10)
+canvas.drawText(message: "december 19 1992", at: Point(x:15, y:555), size: 10)
+canvas.drawText(message: "9 pm", at: Point(x:15, y:540), size: 10)
+
+ canvas.drawText(message: "with", at: Point(x:150, y:570), size: 10)
+canvas.drawText(message: "thrush hermit", at: Point(x:150, y:555), size: 10)
+canvas.drawText(message: "the quahogs", at: Point(x:150, y:540), size: 10)
+
+ canvas.drawText(message: "camaro's cafe", at: Point(x:275, y:570), size: 10)
+canvas.drawText(message: "halifax", at: Point(x:275, y:555), size: 10)
+canvas.drawText(message: "nova scotia", at: Point(x:275, y:540), size: 10)
+
 
 /*:
  ## Template code

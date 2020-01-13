@@ -24,7 +24,6 @@ import PlaygroundSupport
  Or, if you wish, you may use the color constants created below.
  */
 
-
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
@@ -36,23 +35,24 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 
-// Background
-canvas.fillColor = grey
+// Rectangle
+canvas.drawRectangle(at: Point(x: 10, y: 10), width: 200, height: 300, anchoredBy: 1 AnchorPosition = AnchorPosition.bottomLeft, borderWidth: 500 = 1)
 
 //// Has a border, no fill
 canvas.defaultBorderWidth = 100
 canvas.drawShapesWithBorders = true
 canvas.borderColor = lightRed
-canvas.drawShapesWithFill = true
+canvas.drawShapesWithFill = false
 canvas.drawEllipse(at: Point(x: 200, y: 200), width: 300, height: 300)
 
 // No border, has a fill
 canvas.defaultBorderWidth = 100
 canvas.drawShapesWithBorders = true
 canvas.borderColor = lightBlue
-canvas.drawShapesWithFill = true
+canvas.drawShapesWithFill = false
 canvas.drawEllipse(at: Point(x: 350, y: 200), width: 300, height: 300)
 
+// TEXT
 canvas.drawText(message: "the jesus", at: Point(x:10,y:450), size: 40, kerning: 0.75)
 canvas.drawText(message: "and mary chain", at: Point(x:10,y:405), size: 40, kerning: 0.75)
 
