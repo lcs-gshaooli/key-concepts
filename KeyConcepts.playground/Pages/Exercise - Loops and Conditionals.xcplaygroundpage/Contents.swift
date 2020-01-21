@@ -31,14 +31,37 @@ import PlaygroundSupport
 let canvas = Canvas(width: 400, height: 600)
 
 // COLOR CONSTANTS
-let deepOrange = Color(hue: 12, saturation: 78, brightness: 92, alpha: 100)
+let deepOrange = Color(hue: 16, saturation: 90, brightness: 95, alpha: 100)
 let lightBlue = Color(hue: 195, saturation: 63, brightness: 92, alpha: 100)
 let neonGreen = Color(hue: 107, saturation: 61, brightness: 93, alpha: 100)
 
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
-// Color Text
-let white = Color( hue:12, saturation: 10, brightness: 100, alpha: 100)
+
+canvas.fillColor=deepOrange
+
+canvas.drawRectangle(at: Point(x:0, y:400), width:400, height:200)
+
+for x in stride(from: 0, through: 400, by: 100) {
+    canvas.drawRectangle(at: Point(x:x, y:350), width:50, height:50)
+}
+
+canvas.fillColor=lightBlue
+for x in stride(from: 0, through: 400, by: 100) {
+    canvas.drawRectangle(at: Point(x:x, y:0), width:50, height:350)
+}
+
+canvas.fillColor=neonGreen
+for x in stride(from: 50, through: 400, by: 100) {
+    canvas.drawRectangle(at: Point(x:x, y:50), width:50, height:350)
+}
+canvas.fillColor=deepOrange
+for x in stride(from: 50, through: 400, by: 100) {
+    canvas.drawRectangle(at: Point(x:x, y:0), width:50, height:50)
+}
+
+//  Text color
+ canvas.textColor = Color.white 
 
 // TEXT
 canvas.drawText(message: "sloan", at: Point(x:150,y:425), size: 85, kerning: 0.75)
@@ -54,6 +77,7 @@ canvas.drawText(message: "the quahogs", at: Point(x:150, y:540), size: 10)
  canvas.drawText(message: "camaro's cafe", at: Point(x:275, y:570), size: 10)
 canvas.drawText(message: "halifax", at: Point(x:275, y:555), size: 10)
 canvas.drawText(message: "nova scotia", at: Point(x:275, y:540), size: 10)
+
 
 
 /*:

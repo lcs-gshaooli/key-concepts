@@ -36,7 +36,8 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 //       You can turn off the fill or border if desired.
 
 // Rectangle
-canvas.drawRectangle(at: Point(x: 10, y: 10), width: 200, height: 300, anchoredBy: 1 AnchorPosition = AnchorPosition.bottomLeft, borderWidth: 500 = 1)
+canvas.fillColor = grey
+canvas.drawEllipse(at: Point(x: 200, y: 300), width: 650, height: 800)
 
 //// Has a border, no fill
 canvas.defaultBorderWidth = 100
