@@ -38,6 +38,12 @@ let neonGreen = Color(hue: 107, saturation: 61, brightness: 93, alpha: 100)
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 
+
+canvas.fillColor=lightBlue
+for x in stride(from: 0, through: 400, by: 100) {
+    canvas.drawRectangle(at: Point(x:x, y:0), width:50, height:350)
+}
+
 canvas.fillColor=deepOrange
 
 canvas.drawRectangle(at: Point(x:0, y:400), width:400, height:200)
@@ -46,25 +52,22 @@ for x in stride(from: 0, through: 400, by: 100) {
     canvas.drawRectangle(at: Point(x:x, y:350), width:50, height:50)
 }
 
-canvas.fillColor=lightBlue
-for x in stride(from: 0, through: 400, by: 100) {
-    canvas.drawRectangle(at: Point(x:x, y:0), width:50, height:350)
-}
-
-canvas.fillColor=neonGreen
-for x in stride(from: 50, through: 400, by: 100) {
-    canvas.drawRectangle(at: Point(x:x, y:50), width:50, height:350)
-}
+// Orange rectangle
 canvas.fillColor=deepOrange
 for x in stride(from: 50, through: 400, by: 100) {
     canvas.drawRectangle(at: Point(x:x, y:0), width:50, height:50)
 }
+// Green rectangles 
+canvas.fillColor=neonGreen
+for x in stride(from: 50, through: 400, by: 100) {
+    canvas.drawRectangle(at: Point(x:x, y:50), width:50, height:350)
+}
 
 //  Text color
- canvas.textColor = Color.white 
+canvas.textColor = Color.white
 
 // TEXT
-canvas.drawText(message: "sloan", at: Point(x:150,y:425), size: 85, kerning: 0.75)
+canvas.drawText(message: "sloan", at: Point(x:150,y:425), size: 85, kerning: 0.76)
 
  canvas.drawText(message: "saturday", at: Point(x:15, y:570), size: 10)
 canvas.drawText(message: "december 19 1992", at: Point(x:15, y:555), size: 10)
